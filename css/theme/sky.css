@@ -84,8 +84,10 @@ body {
   -ms-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear; }
-  .reveal section img .noshadow {
-    box-shadow: none; }
+  .reveal section img.noshadow {
+    box-shadow: none;
+    background: transparent;
+    border: none; }
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);

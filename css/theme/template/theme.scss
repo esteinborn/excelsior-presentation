@@ -92,8 +92,10 @@ body {
 	    -ms-transition: all .2s linear;
 	     -o-transition: all .2s linear;
 	        transition: all .2s linear;
-	.noshadow {
+	&.noshadow {
 		box-shadow:none;
+		background:transparent;
+		border:none;
 	}
 }
 

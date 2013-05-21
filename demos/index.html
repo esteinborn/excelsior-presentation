@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie9 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Getting Started With Excelsior</title>
+
+    <!-- === Excelsior Stylesheets === -->
+    <link rel="stylesheet" href="excelsior/css/excelsior.min.css">
+
+    <!-- === Optional Project Stylesheet (create in project-assets/css folder) === -->
+    <!-- <link rel="stylesheet" href="project-assets/css/project.css"> -->
+
+    <!-- Fav icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="excelsior/images/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="excelsior/images/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="excelsior/images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="excelsior/images/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" href="excelsior/images/apple-touch-icon.png">
+    <link rel="icon" href="excelsior/images/favicon.ico">
+    <script src="excelsior/js/vendor/custom.modernizr.min.js"></script>
+    <!--[if (IE 8)|(IE 7)]><script src="excelsior/js/vendor/respond.min.js"></script><![endif]-->
+</head>
+<body class="off-canvas">
+    <a href="#global-nav" class="skip-to">Skip to Navigation</a>
+    <a href="#page" class="skip-to">Skip to Content</a>
+    <div class="pull-down-container show-for-small">
+        <a href="#" id="pull-down" class="pull-down show-for-small" data-active="active-gov-bar">
+            <span class="accessibility-text">Open New York State Search</span>
+            <span class="gripper">
+                <span></span>
+            </span>
+        </a>
+    </div>
+    <div class="gov-bar">
+        <div class="gov-wrap">
+            <div class="state-links">
+                <a href="http://www.ny.gov/" class="gov-link-1">New York State</a>
+                <a href="http://www.nysegov.com/citGuide.cfm?superCat=102&amp;cat=449&amp;content=main" class="gov-link-2">State Agencies</a>
+            </div>
+            <a href="#" id="gov-link-3" class="gov-link-3">Search all of NY.gov</a>
+            <form action="http://www.search.cio.ny.gov/search" method="get" target="_blank">
+                <fieldset>
+                    <legend>Legend</legend>
+                    <label for="site-search-box">Search</label>
+                    <div class="search-container">
+                        <label for="state-search" class="hide-off-screen">Search All of NYS</label>
+                        <input type="search" name="q">
+                        <input type="submit" value="Search NY">
+                    </div>
+                    <input type="hidden" name="sort" value="date:D:L:d1">
+                    <input type="hidden" name="output" value="xml_no_dtd">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <input type="hidden" name="oe" value="UTF-8">
+                    <input type="hidden" name="client" value="default_frontend">
+                    <input type="hidden" name="proxystylesheet" value="default_frontend">
+                    <input type="hidden" name="site" value="default_collection">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <header class="site-bar">
+        <div class="site-wrap">
+            <div class="site-title">
+                <!-- === Place Site Title Here === -->
+                <a href="index.html" class="site-logo">Excelsior Web Framework</a>
+            </div>
+            <div class="site-functions">
+                <ul class="mobile-functions">
+                    <li><a href="#" id="mobile-site-search" class="mobile-icons mobile-search-button" data-active="active-site-search">Search Toggle</a></li>
+                    <li><a href="#" id="mobile-site-menu" class="mobile-icons mobile-menu-button" data-active="active-site-menu">Menu Toggle</a></li>
+                </ul>
+                <!-- Link to show the menu -->
+                <div class="site-search">
+                    <form action="#">
+                        <fieldset>
+                            <legend>Legend</legend>
+                            <label for="site-search-box">Search</label>
+                            <div class="search-container">
+                                <input type="search" id="site-search-box" class="site-search-box">
+                                <div class="site-button">
+                                    <input type="submit" class="site-search-button" value="Search Agency">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="global-nav" id="global-nav">
+        <div class="nav-container">
+
+            <!-- === Place Global Navigation Here === -->
+            <ul>
+                <li><a href="#">Nav Link 1</a>
+                    <ul>
+                        <li><a href="#">Sub Nav Link 1.1</a></li>
+                        <li><a href="#">Sub Nav Link 1.2</a></li>
+                        <li><a href="#">Sub Nav Link 1.3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav Link 2</a>
+                    <ul>
+                        <li><a href="#">Sub Nav Link 2.1</a></li>
+                        <li><a href="#">Sub Nav Link 2.2</a></li>
+                        <li><a href="#">Sub Nav Link 2.3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav Link 3</a></li>
+            </ul>
+
+            <!-- === End Global Navigation === -->
+        </div>
+    </nav>
+    <div class="page">
+        <div class="content-section">
+            <noscript>
+                <div class="alert-box">
+                    <p><strong>JavaScript is currently disabled in your web browser. </strong><br /> For full functionality of this site, it is necessary to enable JavaScript. Here are <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript</a></p>
+                </div>
+            </noscript>
+
+            <!-- === Place Page Content Here === -->
+            <div class="row">
+                <div class="large-12 columns">
+                    <h1>Getting Started</h1>
+                    <p>Excelsior is a "meta-framework" built upon some of best technologies currently avaliable on the web. Using these different vendor libraries as a base, allows developers to create cutting edge websites and applications at a much faster pace.</p>
+                    <p>Read the <a href="https://github.com/nys-its/excelsior/wiki">Excelsior Web Framework Documentation</a> to get started.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="large-12 columns">
+                    <h3>Built with:</h3>
+                    <ul class="bulleted-list">
+                        <li><a href="http://foundation.zurb.com">Zurb's Foundation</a></li>
+                        <li><a href="http://jquery.com">jQuery</a></li>
+                        <li><a href="http://modernizr.com/">Modernizr</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- === End Page Content === -->
+        </div>
+        <footer role="contentinfo" class="footer">
+
+            <!-- === Place Footer Content Here === -->
+            <div class="row">
+                <div class="large-12 columns">
+                    <ul>
+                        <li><h4>Excelsior Web Framework</h4></li>
+                        <li><a href="http://nys-its.github.com/go-responsive/">See the framework in action</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- === End Footer Content === -->
+        </footer>
+    </div>
+
+    <script src="excelsior/js/core/excelsior.min.js"></script>
+    <script src="excelsior/js/core/off-canvas.min.js"></script>
+    <script src="excelsior/js/foundation/foundation.min.js"></script>
+
+    <!-- Uncomment items as needed -->
+    <!-- Foundation -->
+    <!-- <script src="excelsior/js/foundation/foundation.alerts.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.clearing.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.cookie.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.dropdown.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.forms.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.joyride.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.magellan.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.orbit.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.placeholder.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.reveal.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.section.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.tooltips.min.js"></script> -->
+
+    <!-- <script src="excelsior/js/foundation/foundation.topbar.min.js"></script> -->
+
+
+    <!-- Excelsior -->
+    <!-- <script src="excelsior/js/core/off-canvas.min.js"></script> -->
+
+
+    <!-- Charting -->
+    <!-- <script src="excelsior/js/vendor/chart.min.js"></script> -->
+    <!-- <script src="excelsior/js/core/responsive-chart.min.js"></script> -->
+
+
+    <!-- Responsive Tables -->
+    <!-- <script src="excelsior/js/core/responsive-table.min.js"></script> -->
+    <!-- <script>$(function(){ $('table').responsiveTable(); });</script> -->
+
+    <script>$(document).foundation();</script>
+
+    <!-- === Place Custom Scripts Here (create in project-assets/js folder) === -->
+    <!-- <script src="project-assets/js/project.js"></script> -->
+
+</body>
+</html>

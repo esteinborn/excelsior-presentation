@@ -6,6 +6,7 @@
 #devices a
 {
   color:#FFF;
+  background:-webkit-linear-gradient(#313131,#242424);
   background:linear-gradient(#313131,#242424);
   box-shadow:inset 0 1px 0 #3c3c3c;
   text-decoration:none;
@@ -91,6 +92,7 @@
 
 body>header
 {
+  background:-webkit-linear-gradient(rgba(52,52,52,0.75), rgba(36,36,36,0.75));
   background:linear-gradient(rgba(52,52,52,0.75), rgba(36,36,36,0.75));
   box-shadow:inset 0 1px 0 #5f6164,inset 0 -1px 0 #2e2f2f,0 1px 3px rgba(0,0,0,0.3);
   position:fixed;
@@ -116,6 +118,7 @@ body>section
 {
   -webkit-transition:padding 240ms ease;
   transition:padding 240ms ease;
+  background-image:-webkit-linear-gradient(#202021,#222223);
   background-image:linear-gradient(#202021,#222223);
   box-shadow:0 1px 0 #363738;
   border-radius:4px;
@@ -147,6 +150,7 @@ header .keyboard,.cssrefresh
 
 header .keyboard a,.cssrefresh a
 {
+  background:-webkit-linear-gradient(#343434,#242424);
   background:linear-gradient(#343434,#242424);
   box-shadow:inset 0 1px 0 #3c3c3c;
   border-radius:4px;
@@ -164,6 +168,7 @@ header .keyboard a,.cssrefresh a
 
 header .keyboard a:hover,.cssrefresh a:hover
 {
+  background:-webkit-linear-gradient(#313131,#242424);
   background:linear-gradient(#313131,#242424);
 }
 
@@ -208,6 +213,7 @@ header .keyboard a,header .cssrefresh a
 
 #devices a:hover
 {
+  background:-webkit-linear-gradient(#2c2c2c,#242424);
   background:linear-gradient(#2c2c2c,#242424);
 }
 
@@ -289,6 +295,7 @@ body .joyride-close-tip:hover,.joyride-close-tip:focus
 
 header .keyboard a.active,header .keyboard a:active,.cssrefresh a.active,.cssrefresh a:active,#devices a.active,#devices a:active
 {
+  background:-webkit-linear-gradient(#1c1c1c,#242424);
   background:linear-gradient(#1c1c1c,#242424);
   box-shadow:inset 0 1px 0 #242424;
   outline:none;
@@ -305,7 +312,7 @@ header .keyboard a.active span,header .keyboard a:active span,.cssrefresh a.acti
     padding-left:6px;
     padding-right:6px;
   }
-  
+
   #devices
   {
     right:8px;

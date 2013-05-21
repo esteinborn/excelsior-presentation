@@ -51,9 +51,6 @@ body {
   color: #51483d;
   text-decoration: none;
   -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  -ms-transition: color .15s ease;
-  -o-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
@@ -74,9 +71,6 @@ body {
   border: 4px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -ms-transition: all .2s linear;
-  -o-transition: all .2s linear;
   transition: all .2s linear; }
   .reveal section img.noshadow {
     box-shadow: none;
@@ -128,7 +122,26 @@ body {
 .reveal .progress span {
   background: #51483d;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+.relative {
+  position: relative; }
+
+.red-x-37 {
+  position: absolute;
+  top: -0.31em;
+  left: 25%;
+  font-size: 23em !important;
+  font-weight: bold !important;
+  color: #d00;
+  color: rgba(200, 0, 0, 0.85); }
+
+/* Remove border on transparent images */
+.no-box-shadow {
+  box-shadow: none !important; }
+
+strike {
+  background-image: url(../../img/strike-through.png);
+  background-repeat: repeat-x;
+  background-position: 0 center;
+  text-decoration: none; }

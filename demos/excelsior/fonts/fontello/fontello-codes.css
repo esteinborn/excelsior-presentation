@@ -1,0 +1,5 @@
+
+.icon-down-open:before { content: '\e75c'; } /* down open arrow */
+.icon-left-open:before { content: '\e75d'; } /* left open arrow */
+.icon-right-open:before { content: '\e75e'; } /* right open arrow */
+.icon-up-open:before { content: '\e75f'; } /* up open arrow */

@@ -14,7 +14,7 @@ Presented for [New York State ITS](http://github.com/nys-its) at **[Effective Ap
 
 ### When
 
-May 30, 2013
+Thursday, May 30, 2013
 
 ### Where
 

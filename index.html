@@ -1,37 +1,26 @@
 <!doctype html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
-
 	<title>Excelsior Presentation</title>
-
-	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-	<meta name="author" content="Hakim El Hattab">
-
+	<meta name="description" content="A framework for easily creating beautiful responsive web sites for New York State">
+	<meta name="author" content="Eric Steinborn and Craig Patik">
+	<meta name="keywords" content="excelsior,responsive web design,new york state,its">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 	<link rel="stylesheet" href="css/reveal.min.css">
 	<link rel="stylesheet" href="css/theme/default.css" id="theme">
-	<link rel="stylesheet" href="css/custom.css" id="theme">
-
 	<!-- For syntax highlighting -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
-
 	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 	<script>
 	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 	</script>
+	<!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+</head>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
+<body>
 
 		<div class="reveal">
 
@@ -39,9 +28,12 @@
 			<div class="slides">
 				<section>
 					<h1>Title of Presentation</h1>
+					<h2>Or: How We Learned to Stop Worrying and Love Responsive Design</h2>
 					<div>
-						<div data-fragment-index="0" style="font-size: 36.37141418457031px;">Craig Patik</div>
-						<div data-fragment-index="1" style="font-size: 36.37141418457031px;">Eric Steinborn</div>
+						<br>
+						<div data-fragment-index="0">Craig Patik</div>
+						<br>
+						<div data-fragment-index="1">Eric Steinborn</div>
 					</div>
 				</section>
 				<section data-transition="fade">
@@ -102,13 +94,24 @@
 				<section>
 					<h2>In a Perfect World...</h2>
 					<div><img src="img/poster.jpg" alt=""></div>
-					<aside class="notes">We weren't burdoned with limitations, the sky was the limit!</aside>
+					<aside class="notes">
+						<ul>
+							<li>We thought of how the ideal site would work</li>
+							<li>We weren't burdened with limitations</li>
+							<li>The sky was the limit</li>
+							<li>We threw around every good idea with no thought about the consequences</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-transition="fade">
 					<h2>Pixel-Perfect Photoshop Comps</h2>
 					<div><img src="img/old-mockup.jpg" alt=""></div>
 					<aside class="notes">
-						Typically you would design in Photoshop, and mock up all kinds of layouts.
+						<ul>
+							<li>Typically you would design in Photoshop, and mock up all kinds of layouts.</li>
+							<li>Everything was perfect, right down to the pixel.</li>
+							<li>"Your web designer is great, they can make it look exactly the same, right?"</li>
+						</ul>
 					</aside>
 				</section>
 				<section data-transition="fade">
@@ -117,13 +120,16 @@
 					</h2>
 					<div><img src="img/multi-device.jpg" alt=""></div>
 					<aside class="notes">
-						RWD isn’t pixel-perfect, you'd theoretically have to design a separate comp for every single device
+						<ul>
+							<li>RWD isn’t pixel-perfect</li>
+							<li>If you want to comp every design, you'd have to design separate comps for every single device</li>
+						</ul>
 					</aside>
 				</section>
 				<section data-transition="fade">
 					<h2>Typical Waterfall Approach</h2>
 					<img src="img/waterfall1.jpg" style="">
-					<small>Photo Credit: <a href="http://danielmall.com/">Dan Mall</a>
+					<small>Photo Credit: <a href="http://danielmall.com">Dan Mall</a>
 					</small>
 					<aside class="notes">
 					</aside>
@@ -415,7 +421,7 @@
 					<h2>Mobile is Winning</h2>
 					<div>
 						<img src="img/StatCounter-mobile_browser-na-monthly-200812-201205.jpg" style="height: 460px;">
-						<img src="img/mobilestats.jpg" style="height: 460px;">
+						<img src="img/mobilestats.png" style="height: 460px;">
 						<br>
 						<small>Source: <a href="http://gs.statcounter.com/#mobile_browser-na-monthly-200904-201304">StatCounter</a></small>
 					</div>

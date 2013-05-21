@@ -1,37 +1,26 @@
 <!doctype html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
-
 	<title>Excelsior Presentation</title>
-
-	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-	<meta name="author" content="Hakim El Hattab">
-
+	<meta name="description" content="A framework for easily creating beautiful responsive web sites for New York State">
+	<meta name="author" content="Eric Steinborn and Craig Patik">
+	<meta name="keywords" content="excelsior,responsive web design,new york state,its">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 	<link rel="stylesheet" href="css/reveal.min.css">
 	<link rel="stylesheet" href="css/theme/default.css" id="theme">
-	<link rel="stylesheet" href="css/custom.css" id="theme">
-
 	<!-- For syntax highlighting -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
-
 	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 	<script>
 	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 	</script>
+	<!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+</head>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
+<body>
 
 		<div class="reveal">
 
@@ -39,9 +28,12 @@
 			<div class="slides">
 				<section>
 					<h1>Title of Presentation</h1>
+					<h2>Or: How We Learned to Stop Worrying and Love Responsive Design</h2>
 					<div>
-						<div data-fragment-index="0" style="font-size: 36.37141418457031px;">Craig Patik</div>
-						<div data-fragment-index="1" style="font-size: 36.37141418457031px;">Eric Steinborn</div>
+						<br>
+						<div data-fragment-index="0">Craig Patik</div>
+						<br>
+						<div data-fragment-index="1">Eric Steinborn</div>
 					</div>
 				</section>
 				<section data-transition="fade">
@@ -96,31 +88,50 @@
 						<img src="img/present.png" class="noshadow" alt="" style="height:70%">
 					</div>
 				</section>
+
+				<!-- ******** *************************** ******* -->
+				<!-- ******** Slide 8 - Craig begins here ******* -->
+				<!-- ******** *************************** ******* -->
+
 				<section>
-					<h2 style="font-style: normal; font-variant: normal;">IN A PERFECT WORLD...</h2>
+					<h2>In a Perfect World...</h2>
 					<div><img src="img/poster.jpg" alt=""></div>
-					<aside class="notes">We weren't burdoned with limitations, the sky was the limit!</aside>
+					<aside class="notes">
+						<ul>
+							<li>We thought of how the ideal site would work</li>
+							<li>We weren't burdened with limitations</li>
+							<li>The sky was the limit</li>
+							<li>We threw around every good idea with no thought about the consequences</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-transition="fade">
 					<h2>Pixel-Perfect Photoshop Comps</h2>
 					<div><img src="img/old-mockup.jpg" alt=""></div>
 					<aside class="notes">
-						Typically you would design in Photoshop, and mock up all kinds of layouts.
+						<ul>
+							<li>Typically you would design in Photoshop, and mock up all kinds of layouts.</li>
+							<li>Everything was perfect, right down to the pixel.</li>
+							<li>"Your web designer is great, they can make it look exactly the same, right?"</li>
+						</ul>
 					</aside>
 				</section>
 				<section data-transition="fade">
 					<h2>
-						<strike>Pixel Perfect Photoshop Comps</strike>
+						<strike>Pixel-Perfect Photoshop Comps</strike>
 					</h2>
 					<div><img src="img/multi-device.jpg" alt=""></div>
 					<aside class="notes">
-						RWD isn’t pixel perfect, you'd theoretically have to design a separate comp for every single device
+						<ul>
+							<li>RWD isn’t pixel-perfect</li>
+							<li>If you want to comp every design, you'd have to design separate comps for every single device</li>
+						</ul>
 					</aside>
 				</section>
 				<section data-transition="fade">
 					<h2>Typical Waterfall Approach</h2>
 					<img src="img/waterfall1.jpg" style="">
-					<small>Photo Credit: <a href="http://danielmall.com/">Dan Mall</a>
+					<small>Photo Credit: <a href="http://danielmall.com">Dan Mall</a>
 					</small>
 					<aside class="notes">
 					</aside>
@@ -156,9 +167,9 @@
 					<img src="img/actual schedule.jpg" style="">
 				</section>
 				<section>
-					<h2>The web is a series of <strike>tubes</strike> components</h2>
-					<div class="fragment">Let's create some reusable components</div>
-					<div class="fragment">But wait... Let's not reinvent the wheel again.</div>
+					<h2>The Web is a Series of <strike>Tubes</strike> Components</h2>
+					<div class="fragment">Let's create some reusable components.</div>
+					<div class="fragment">But wait &mdash; let's not reinvent the wheel again.</div>
 					<div>
 						<img src="img/happening3.jpg" style="height:65%" alt="">
 					</div>
@@ -253,10 +264,14 @@
 							that adapt to every device.”
 						</blockquote>
 						<p><small><a href="http://nys-its.github.io/go-responsive">http://nys-its.github.io/go-responsive</a></small></p>
+						<aside class="notes">
+							*** Audience interruption ***
+							"That's an excellent question, I'm so glad somebody brought that up."
+						</aside>
 					</div>
 				</section>
 				<section>
-					<h2 style="text-transform: none;">“Thats all sounds terrific, but&nbsp;can you please explain how I could possibly use these super amazing, technologically advanced components on <u>MY</u> sites and apps?”</h2>
+					<h2>“Thats all sounds terrific, but&nbsp;can you please explain how I could possibly use these super amazing, technologically advanced components on <u>MY</u> sites and apps?”</h2>
 				</section>
 				<section>
 					<h2>We Didn't Create It From Scratch</h2>
@@ -279,6 +294,11 @@
 						(Pic of NYS flag with CSI-esque “enhance” into the word Excelsior on the seal)
 					</aside>
 				</section>
+
+				<!-- ******** **************************** ******* -->
+				<!-- ******** Slide 31 - Eric resumes here ******* -->
+				<!-- ******** **************************** ******* -->
+
 				<section>
 					<div>
 						<img class="noshadow" src="img/excelsior-light-text-w-shadow.png" style="">
@@ -376,41 +396,42 @@
 				</section>
 				<section data-transition="fade">
 					<h2>1. IE 6 is Dead</h2>
-					<img src="img/ie6stats.png">
+					<img src="img/ie6stats.png" style="height: 480px;">
 					<p>IE 6 = 0.15%</p>
+					<small>Source: <a href="http://gs.statcounter.com/#browser-na-monthly-200904-201304">StatCounter</a></small>
 					<aside class="notes">IE6 is essentially zero</aside>
 				</section>
 				<section data-transition="fade">
 					<h2>IE 7 Isn't Far Behind</h2>
 					<div>
-						<img src="img/ie7stats.png">
-						<br>
+						<img src="img/ie7stats.png" style="height: 480px;">
 					</div>
 					<p>IE 7 = 0.74%</p>
+					<small>Source: <a href="http://gs.statcounter.com/#browser-na-monthly-200904-201304">StatCounter</a></small>
 					<aside class="notes">IE7 is closely approaching that</aside>
 				</section>
 				<section data-transition="fade">
 					<h2>Look Close, You'll See Something</h2>
 					<div>
-						<img src="img/iestats.png">
-						<br>
+						<img src="img/iestats.png" style="height: 480px;">
 					</div>
-					<p>IE Usage 2008-2013</p>
+					<p>IE Usage 2009-2013</p>
+					<small>Source: <a href="http://gs.statcounter.com/#browser-na-monthly-200904-201304">StatCounter</a></small>
 					<aside class="notes">I'm less concerned with a steadily declining IE usage statistic</aside>
 				</section>
 				<section data-transition="fade">
 					<h2>Mobile is Winning</h2>
 					<div>
-						<img src="img/mobile-usage.jpg" style="height: 460px;">
+						<img src="img/mobile-usage.jpg" style="height: 480px;">
 					</div>
 					<p>Mobile Usage 2009-2013</p>
+					<small>Source: <a href="http://gs.statcounter.com/#mobile_browser-na-monthly-200904-201304">StatCounter</a></small>
 					<aside class="notes">mobile devices far outpace legacy browsers, and are set to over-take them in 2015.</aside>
 				</section>
 				<section>
 					<h2>2. Shun the Future for the past?</h2>
 					<div>
 						<img src="img/old-pc.gif" style="height: 504.21573972702026px;">
-						<br>
 					</div>
 				</section>
 				<section>
@@ -488,18 +509,18 @@
 					<div>Easily report it using <a href="https://github.com/nys-its/excelsior/issues">GitHub Issues</a>
 					</div>
 				</section>
-				<section>
-					<h2>Excelsior's Mission</h2>
-					<p>Continuously research and implement RWD best practices with the help of NYS employees to maintain the best Responsive Web Design Framework possible.</p>
-					<p>
-						<br>
-					</p>
-					<div class="fragment" data-fragment-index="0">
-						<blockquote>Onward and Upward!</blockquote>
-					</div>
-					<aside class="notes">Many talented devs across NYS<br>
-						Let's make this the best RWD framework</aside>
-					</section>
+                <section>
+                    <h2>Excelsior's Mission</h2>
+                    <p>Continuously research and implement RWD best practices with the help of NYS employees to maintain the best Responsive Web Design Framework possible.</p>
+                    <p>
+                        <br>
+                    </p>
+                    <div class="fragment" data-fragment-index="0">
+                        <blockquote>Ever Upward!</blockquote>
+                    </div>
+                    <aside class="notes">Many talented devs across NYS<br>
+                    Let's make this the best RWD framework</aside>
+                </section>				
 					<section>
 						<h2>Questions?</h2>
 					</section>

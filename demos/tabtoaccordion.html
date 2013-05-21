@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie9 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Tabs to Accordion Demo</title>
+
+    <!-- === Excelsior Stylesheets === -->
+    <link rel="stylesheet" href="excelsior/css/excelsior.min.css">
+
+    <!-- === Optional Project Stylesheet (create in project-assets/css folder) === -->
+    <!-- <link rel="stylesheet" href="project-assets/css/project.css"> -->
+
+    <!-- Fav icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="excelsior/images/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="excelsior/images/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="excelsior/images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="excelsior/images/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" href="excelsior/images/apple-touch-icon.png">
+    <link rel="icon" href="excelsior/images/favicon.ico">
+    <script src="excelsior/js/vendor/custom.modernizr.min.js"></script>
+    <!--[if (IE 8)|(IE 7)]><script src="excelsior/js/vendor/respond.min.js"></script><![endif]-->
+    <style>
+    section, .content {
+        -webkit-transition: all .5s linear;
+                transition: all .5s linear;
+    }
+    html, body {height:auto;}
+    body{max-width:90%;margin:1em auto;}
+    .row { box-shadow:0 0 5px rgba(0, 0, 0, 0.15);}
+      .row.display {font-size: 1em; margin-bottom: 10px; padding:0; }
+      .row.display .columns, .row.display .column { background: #e7e7e7; border: 2px solid #c9c9c9; font-weight: bold; text-indent: 3px; padding: 10px 5px; color: #444; }
+    </style>
+</head>
+<body>
+    <p>Note: the animation in the demo isn't implemented Excelsior-wide. We only added it to the demo to show you the change that is happening.</p>
+    <div class="section-container auto" data-section>
+        <section>
+            <p class="title" data-section-title><a href="#panel1">Section 1</a></p>
+            <div class="content" data-section-content>
+                <p>Content of section 1.</p>
+            </div>
+        </section>
+        <section>
+            <p class="title" data-section-title><a href="#panel2">Section 2</a></p>
+            <div class="content" data-section-content>
+                <p>Content of section 2.</p>
+            </div>
+        </section>
+        <section>
+            <p class="title" data-section-title><a href="#panel3">Section 3</a></p>
+            <div class="content" data-section-content>
+                <p>Content of section 3.</p>
+            </div>
+        </section>
+    </div>
+    <script src="excelsior/js/core/excelsior.min.js"></script>
+    <script src="excelsior/js/foundation/foundation.min.js"></script>
+
+
+    <script src="excelsior/js/foundation/foundation.section.min.js"></script>
+
+
+    <script>$(document).foundation();</script>
+
+
+</body>
+</html>

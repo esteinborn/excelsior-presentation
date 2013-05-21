@@ -4,7 +4,7 @@ Yeah, we're working on the title.
 
 ## What
 
-Presented at **Effective Approaches for Mobile/Web Design, Development and Management**
+Presented for New York State at **[Effective Approaches for Mobile/Web Design, Development and Management](http://www.nysforum.org/events/ETWA_5_30_2013/)**
 
 ## Who
 

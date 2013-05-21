@@ -2,23 +2,24 @@
 
 Yeah, we're working on the title.
 
-## What
+#### What
 
 Presented for New York State at **[Effective Approaches for Mobile/Web Design, Development and Management](http://www.nysforum.org/events/ETWA_5_30_2013/)**
 
-## Who
+#### Who
 
 [Eric Steinborn](http://github.com/esteinborn)
+
 [Craig Patik](http://github.com/cpatik)
 
-## When
+#### When
 
 May 30, 2013
 
-## Where
+#### Where
 
 Albany, NY
 
-## License
+#### License
 
 MIT licensed

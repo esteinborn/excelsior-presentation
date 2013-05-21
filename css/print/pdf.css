@@ -162,3 +162,5 @@ ul, ol, div, p {
 .reveal small a {
 	font-size: 16pt !important;
 }
+.red-x-37{display:none;}
+.reveal img {max-height:400px;}

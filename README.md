@@ -6,6 +6,8 @@ Yeah, we're working on the title.
 
 Presented for [New York State ITS](http://github.com/nys-its) at **[Effective Approaches for Mobile/Web Design, Development and Management](http://www.nysforum.org/events/ETWA_5_30_2013/)**
 
+[Print This Presentation](http://esteinborn.github.io/excelsior-presentation/?print-pdf) - After clicking this link, just click print in your browser.
+
 ### Who
 
 [Eric Steinborn](http://github.com/esteinborn)

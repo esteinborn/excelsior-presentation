@@ -44,7 +44,7 @@ body {
   font-family: "Quicksand", sans-serif;
   line-height: 0.9em;
   letter-spacing: -0.08em;
-  text-transform: uppercase;
+  text-transform: none;
   text-shadow: none; }
 
 .reveal h1 {
@@ -148,7 +148,8 @@ body {
   left: 25%;
   font-size: 23em !important;
   font-weight: bold !important;
-  color: #d00; }
+  color: #d00;
+  color: rgba(200, 0, 0, 0.85); }
 
 /* Remove border on transparent images */
 .no-box-shadow {

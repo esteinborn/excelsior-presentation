@@ -160,6 +160,10 @@ $(function(){
             }, false);
             resize();
             size.style.minWidth = 0;
+            if (isNav == true) {
+              $(".tablet-portrait")[0].click();
+            }
+
         });
     })(window.resbook);
   }

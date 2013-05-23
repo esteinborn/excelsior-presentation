@@ -249,26 +249,77 @@
 			<section>
 				<h2>Built for New York State</h2>
 				<style>
-				.collage > div {
-					float: left;
-					width: 30%;
+				.collage {
+					position: relative;
 				}
 
-				.collage .one {
+				.collage > div {
 					float: left;
+					height: 10em;
+					line-height: 10em;
 				}
+
+				.collage img {
+					vertical-align: middle;
+				}
+
+				.collage small {
+					position: relative;
+					font-size: 50%;
+				}
+
+				.collage .img-flag {
+					position: relative;
+					width: 33%;
+				}
+
+				.collage .img-statue {
+					width: 35%;
+				}
+
+				.collage .img-capitol {
+					width: 32%;
+				}
+
+				.collage .img-capitol small {
+					top: -3.2em;
+				}
+
+				.img-flag-outline {
+					position: absolute;
+					top: 0em;
+					left: 0em;
+				}
+
+				.img-flag-fuzzy,
+				.img-flag-clear {
+					position: absolute;
+					top: 1em;
+					left: 2em;
+				}
+
+				/* Flag zoom area proportions: 84x38; */
 				</style>
 				<div class="collage">
-					<div class="one">
+					<div class="img-flag">
 						<img src="img/Flag_of_New_York.small.png" alt="New York State Flag">
+						<div class="fragment img-flag-outline" data-fragment-index="0">
+							<img src="img/Flag_of_New_York.small_outline.png" alt="New York State Flag">
+						</div>
 					</div>
-					<div class="two">
-						<img src="img/capitol.jpg" alt="New York State Capitol building">
-						<small>Photo credit: <a href="http://www.flickr.com/photos/jstephenconn/5425778154/">J. Stephen Conn</a>
-					</div>
-					<div class="three">
+					<div class="img-statue">
 						<img src="img/statue-of-liberty.jpg" alt="Statue of Liberty">
 						<small>Photo credit: <a href="http://www.flickr.com/photos/hesterr/6775796722/">Hesterr</a></small>
+					</div>
+					<div class="img-capitol">
+						<img src="img/capitol_cropped.jpg" alt="New York State Capitol building">
+						<small>Photo credit: <a href="http://www.flickr.com/photos/jstephenconn/5425778154/">J. Stephen Conn</a></small>
+					</div>
+					<div class="fragment img-flag-fuzzy" data-fragment-index="1">
+						<img src="img/flag_big_fuzzy.jpg" alt="New York State Flag">
+					</div>
+					<div class="fragment img-flag-clear" data-fragment-index="2">
+						<img src="img/flag_big_clear.png" alt="New York State Flag">
 					</div>
 				</div>
 				<aside class="notes">

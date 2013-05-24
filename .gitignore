@@ -165,4 +165,3 @@ pip-log.txt
 *.sublime-*
 node_modules
 .sass-cache
-index_craig.html

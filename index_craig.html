@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Excelsior Presentation</title>
+	<meta name="description" content="A framework for easily creating beautiful responsive web sites for New York State">
+	<meta name="author" content="Eric Steinborn and Craig Patik">
+	<meta name="keywords" content="excelsior,responsive web design,new york state,its">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+	<!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<!-- ******** *************************** ******* -->
+			<!-- ******** Slide 1 - Craig begins here ******* -->
+			<!-- ******** *************************** ******* -->
+
+			<section>
+				<h2>ITS Helped Us Collaborate</h2>
+				<div><img src="img/ITSonly.png" class="noshadow"></div>
+				<div>Put a bunch of smart people in a room to work this out.</div>
+				<aside class="notes">
+					<p>With ITS, NYS is positioned to avoid that by collaborating our efforts into one project.</p>
+					<p>We had a unique opportunity yada yada...</p>
+					<ul>
+						<li>This wasn't just any old day at the office — just me and a couple of coworkers shooting the breeze about what we might do with a site, "if only" we didn't have this restriction or that</li>
+						<li>It felt a bit surreal having so many intelligent people bouncing around ideas all at once. I could barely keep up.</li>
+						<li>We thought of how the ideal site would work</li>
+						<li>We weren't burdened with limitations. The sky was the limit.</li>
+						<li>We threw around every good idea with no thought about the consequences</li>
+					</ul>
+					<p>But we knew that wasn't how development normally works. <em>(next slide)</em></p>
+				</aside>
+			</section>
+			<section data-transition="fade">
+				<h2>Typical Development</h2>
+				<div class="fragment" data-fragment-index="0"><img src="img/one-wheel.png" class="noshadow"></div>
+				<aside class="notes">
+					<p>Typically a company or organization faced with a development challenge ends up reinventing a wheel.</p>
+					<p><em>(show image)</em></p>
+					<p>Maybe it's this wheel. <em>(point at screen)</em> That doesn't look too bad.</p>
+					<p>But what do you end up with? <em>(next slide)</em></p>
+				</aside>
+			</section>
+			<section data-transition="fade">
+				<h2>Typical Development</h2>
+				<div><img src="img/wheels-multi-color.png" class="noshadow"></div>
+				<aside class="notes">
+					<p>A bunch of nice-looking wheels that all do the same thing.</p>
+					<p><em>(next slide, quickly)</em></p>
+				</aside>
+			</section>
+			<section>
+				<h2>Lack of  Collaboration</h2>
+				<div class="fragment" data-fragment-index="0"><img src="img/money-1.jpg"></div>
+				<aside class="notes">
+					<p>This lack of collaboration is terribly inefficient</p>
+					<p>It's redundant, it's a waste of time, it's a waste of money.</p>
+				</aside>
+			</section>
+			<section>
+				<h2>RWD Can be Hard</h2>
+				<p class="fragment">It takes a lot of time</p>
+				<p class="fragment">It's fundamentally different</p>
+				<p class="fragment">RWD is a moving target</p>
+				<p class="fragment">Don't reinvent the wheel again</p>
+				<aside class="notes">
+					<p>New techniques and best practices are constantly coming to the forefront</p>
+					<p>You have to stay on top of the latest developments as much as users are staying on top of the latest shiny new phone or tablet</p>
+				</aside>
+			</section>
+			<section>
+				<h2>Future-Friendly Websites</h2>
+				<div class="fragment">
+					<p>What device will you be unwrapping tomorrow?</p>
+					<br>
+					<p class="fragment" data-fragment-index="1">What device will you be unwrapping two holidays from now?</p>
+					<img src="img/present.png" class="noshadow" alt="" style="height:400px">
+				</div>
+				<aside class="notes">
+					<p>You can probably imagine the things your kids will be unwrapping with glee next holiday. And, let's face it, what <em>you</em> will be unwrapping with glee.</p>
+					<p>We can make predictions about the near-future and feel pretty confident.</p>
+					<p><em>(Next bullet)</em></p>
+					<p>But what about in two years? Three?</p>
+					<p>The world keeps moving forward, but realistically your code will still be out there, so you have to prepare for anything someone might throw at it.</p>
+				</aside>
+			</section>
+			<section>
+				<h2>So What Should We Do?</h2>
+				<p class="fragment" data-fragment-index="0">How to avoid reinventing the wheel</p>
+				<p class="fragment" data-fragment-index="1">What's great about the web right now?</p>
+				<p class="fragment" data-fragment-index="2">What will be great about the web in the future?</p>
+				<aside class="notes">
+					<p>We discussed how to go about tackling this problem.</p>
+					<p><em>(Show first bullet)</em></p>
+					<p>Our angle was think about how web development has advanced dramatically in the last few years.</p>
+					<p>What could we do to harness that?</p>
+				</aside>
+			</section>
+			<section>
+				<h2>The Web is a Series of <strike>Tubes</strike> Components</h2>
+				<div class="fragment">Let's create some reusable components.</div>
+				<div class="fragment">But wait &mdash; let's not reinvent the wheel again.</div>
+				<div>
+					<img src="img/tubes.png" style="height:500px" class="noshadow" alt="">
+				</div>
+			</section>
+			<section data-transition="fade">
+				<h2>Pixel-Perfect Photoshop Comps</h2>
+				<div><img src="img/old-mockup.jpg" alt=""></div>
+				<aside class="notes">
+					<ul>
+						<li>Typically you would design in Photoshop, and mock up all kinds of layouts.</li>
+						<li>Everything was perfect, right down to the pixel.</li>
+						<li>"Your web designer is great, they can make it look exactly the same, right?"</li>
+					</ul>
+				</aside>
+			</section>
+			<section data-transition="fade">
+				<h2>
+					<strike>Pixel-Perfect Photoshop Comps</strike>
+				</h2>
+				<div><img src="img/multi-device.jpg" alt=""></div>
+				<aside class="notes">
+					<ul>
+						<li>If you want to comp every design, you'd have to design separate comps for every single device</li>
+						<li>Responsive design isn't pixel-perfect</li>
+						<li>Responsive design is <em>device</em>-perfect. It's <em>environment</em>-perfect</li>
+					</ul>
+				</aside>
+			</section>
+			<section>
+				<h2>Is There Anybody Out There?</h2>
+				<div>
+					<img src="img/anybodyoutthere.jpg" style="height:500px">
+				</div>
+				<aside class="notes">
+					<p>Has anyone already done this before?</p>
+					<p>Fortunately, yes. We found a few organizations tackling responsive web design well.</p>
+					<p>We picked the one that fit best.</p>
+				</aside>
+			</section>
+			<section data-transition="fade">
+				<h2>Foundation</h2>
+				<img class="noshadow" src="img/device-bg1.png">
+				<aside class="notes">
+					<p>Foundation is a framework made by a company called Zurb</p>
+					<p>It's modular, it's very customizable, and it provides a great base to start from</p>
+				</aside>
+			</section>
+			<section data-transition="fade">
+				<h2>Foundation</h2>
+				<div>Mobile First</div>
+				<div>Semantic Markup</div>
+				<div>Library of JaveScript Plugins</div>
+				<div>
+					<br>
+				</div>
+				<blockquote>“The most advanced responsive<br>
+					front-end framework in the world.”
+				</blockquote>
+				<small>
+					<em>- Zurb</em>
+				</small>
+			</section>
+			<section>
+				<h2>Responsive Grid</h2>
+				<small>
+					<a href="demos/grid.html" target="_blank">View Demo</a>
+				</small>
+				<div class="fragment" data-fragment-index="0"><img src="img/grid.gif" alt=""></div>
+				<aside class="notes">
+				</aside>
+			</section>
+			<section>
+				<h2>Tabs to Accordion</h2>
+				<small>
+					<a href="demos/tabtoaccordion.html" target="_blank">View Demo</a>
+				</small>
+				<div class="fragment" data-fragment-index="0"><img src="img/tabtoaccordion.gif" alt=""></div>
+				<aside class="notes">
+				</aside>
+			</section>
+			<section>
+				<h2>So We Started Making Stuff</h2>
+				<div><img src="img/sprint1.jpg" alt=""></div>
+				<div><img src="img/sprint2.jpg" alt=""></div>
+			</section>
+			<section>
+				<h2>Navigation</h2>
+				<small>
+					<a href="demos/navigation.html" target="_blank">View Demo</a>
+				</small>
+				<div class="fragment" data-fragment-index="0">
+					<img src="img/CropperCapture_11_.Gif" style="">
+				</div>
+			</section>
+			<section>
+				<h2>Responsive Tables</h2>
+				<small>
+					<a href="demos/tables.html" target="_blank">View Demo</a>
+				</small>
+				<div class="fragment" data-fragment-index="0"><img src="img/responsive-tables.gif" alt=""></div>
+			</section>
+			<section>
+				<h2>“Thats sounds terrific and everything, but how can I possibly use these super amazing, technologically advanced components on <u>MY</u> sites and apps?”</h2>
+				<div class="fragment"><br>It's actually based on a new web framework...</div>
+				<aside class="notes">
+					We Didn't Create It From Scratch
+				</aside>
+			</section>
+			<section>
+				<h2>The New Web Framework</h2>
+				<div class="fragment">Is Responsive</div>
+				<div class="fragment">Is Modern</div>
+				<div class="fragment">Is Whimsically Magically Magnificent</div>
+			</section>
+			<section>
+				<h2>Built for New York State</h2>
+				<style>
+					.collage {
+						position: relative;
+					}
+
+					.collage > div {
+						float: left;
+						height: 10em;
+						line-height: 10em;
+					}
+
+					.collage img {
+						vertical-align: middle;
+					}
+
+					.collage small {
+						position: relative;
+						font-size: 50%;
+					}
+
+					.collage .img-flag {
+						position: relative;
+						width: 33%;
+					}
+
+					.collage .img-statue {
+						width: 35%;
+					}
+
+					.collage .img-capitol {
+						width: 32%;
+					}
+
+					.collage .img-capitol small {
+						top: -3.2em;
+					}
+
+					.img-flag-outline {
+						position: absolute;
+						top: 0em;
+						left: 0em;
+					}
+
+					.img-flag-fuzzy,
+					.img-flag-clear {
+						position: absolute;
+						top: 1em;
+						left: 2em;
+					}
+				</style>
+				<div class="collage">
+					<div class="img-flag">
+						<img src="img/Flag_of_New_York.small.png" alt="New York State Flag">
+						<div class="fragment img-flag-outline" data-fragment-index="0">
+							<img src="img/Flag_of_New_York.small_outline.png" alt="New York State Flag">
+						</div>
+					</div>
+					<div class="img-statue">
+						<img src="img/statue-of-liberty.jpg" alt="Statue of Liberty">
+						<small>Photo credit: <a href="http://www.flickr.com/photos/hesterr/6775796722/">Hesterr</a></small>
+					</div>
+					<div class="img-capitol">
+						<img src="img/capitol_cropped.jpg" alt="New York State Capitol building">
+						<small>Photo credit: <a href="http://www.flickr.com/photos/jstephenconn/5425778154/">J. Stephen Conn</a></small>
+					</div>
+					<div class="fragment img-flag-fuzzy" data-fragment-index="1">
+						<img src="img/flag_big_fuzzy.jpg" alt="New York State Flag">
+					</div>
+					<div class="fragment img-flag-clear" data-fragment-index="2">
+						<img src="img/flag_big_clear.png" alt="New York State Flag">
+					</div>
+				</div>
+				<aside class="notes">
+					E - But what would we call such a thing?<br>
+					C - The name is right in front of you.<br>
+					E - I can’t see it...<br>
+					C - It’s right there (points) to the new square outline<br>
+					E - I still can't see it though<br>
+					C - Let me zoom in on it<br>
+					E - Okay, can you enhance that?
+				</aside>
+			</section>
+			<!-- ******** **************************** ******* -->
+			<!-- ******** Slide 31 - Eric Begins here  ******* -->
+			<!-- ******** **************************** ******* -->
+
+			<section data-transition="fade">
+				<div>
+					<img class="noshadow" src="img/excelsior-dark-text-w-shadow.png" style="">
+				</div>
+				<aside class="notes">
+					It's called Excelsior, let me tell you what it is, and also what it isn't.
+				</aside>
+			</section>
+
+			<section>
+				<h2>Thanks for Listening</h2>
+					<br>
+					<div>
+						Luke Charde<br>
+						<small>Department of Labor</small>
+					</div>
+					<br><br>
+					<div style="float:left;width:48%;margin-right:4%">
+						Craig Patik<br>
+						<small>Department of Taxation &amp; Finance</small>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div>
+						Eric Steinborn<br>
+						<small>Division of Criminal Justice Services</small>
+					</div>
+			</section>
+		</div>
+	</div>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: false,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+		{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+		{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+	</script>
+
+</body>
+</html>

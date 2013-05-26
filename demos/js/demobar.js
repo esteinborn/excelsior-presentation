@@ -158,7 +158,7 @@ $(function(){
               if (typeof (keys[key]) === 'undefined') { return false; }
               setPosition(sizes[keys[key]], false, keys[key], "auto");
             }, false);
-            resize();
+            //resize();
             size.style.minWidth = 0;
             if (isNav == true) {
               $(".tablet-portrait")[0].click();

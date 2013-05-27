@@ -11,10 +11,10 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
         '<header>' +
         '<div id="size"><\/div>' +
         '<div id="devices">' +
-        '  <a href="#" class="tablet-landscape"><span>Tablet Landscape<\/span><\/a>' +
-        '  <a href="#" class="tablet-portrait" id="tablet-landscape-joyride"><span>Tablet Portrait<\/span><\/a>' +
-        '  <a href="#" class="smartphone-landscape"><span>iPhone Landscape<\/span><\/a>' +
-        '  <a href="#" class="smartphone-portrait"><span>iPhone Portrait<\/span><\/a>' +
+        // '  <a href="#" class="tablet-landscape"><span>Tablet Landscape<\/span><\/a>' +
+        '  <a href="#" class="tablet-portrait"><span>Tablet<\/span><\/a>' +
+        // '  <a href="#" class="smartphone-landscape"><span>iPhone Landscape<\/span><\/a>' +
+        '  <a href="#" class="smartphone-portrait"><span>Phone<\/span><\/a>' +
         '  <a href="#" id="desktop-view" class="auto active"><span>Desktop<\/span><\/a>' +
         '  <\/div><\/header><section><div id="wrapper"><iframe src="'+d.URL+'" onLoad="resbook.changeUrl(this.contentWindow.location,this.contentDocument.title);"><\/iframe><\/div><\/section>'+
         '<\/body><\/html>');
@@ -47,12 +47,14 @@ $(function(){
               tabletLandscape: [1024, 768],
               auto: 'auto'
             },
+
             resize = function (w, h, f) {
               w = w || wrapper.clientWidth;
               //h = h || wrapper.clientHeight;
               f = f || "Desktop";
               size.innerHTML = f; //w + 'x' + h
             },
+
             setPosition = function (wh, t, cl, myTxt) {
               var width = (wh === 'auto') ? w.innerWidth : wh[0],
                   height = (wh === 'auto') ? w.innerHeight : wh[1],
@@ -120,32 +122,28 @@ $(function(){
                 setTimeout(function () {
                   self.classList.add('active');
                   if (self.classList.contains('smartphone-portrait')) {
-                    setPosition(sizes.smartphonePortrait, false, 'smartphonePortrait', "Phone Portrait");
+                    setPosition(sizes.smartphonePortrait, false, 'smartphonePortrait', "Phone");
                   }
-                  else if (self.classList.contains('smartphone-landscape')) {
-                    setPosition(sizes.smartphoneLandscape, false, 'smartphoneLandscape', "Phone Landscape");
-                  }
+                  // else if (self.classList.contains('smartphone-landscape')) {
+                  //   setPosition(sizes.smartphoneLandscape, false, 'smartphoneLandscape', "Phone Landscape");
+                  // }
                   else if (self.classList.contains('tablet-portrait')) {
-                    setPosition(sizes.tabletPortrait, false, 'tabletPortrait', "Tablet Portrait");
+                    setPosition(sizes.tabletPortrait, false, 'tabletPortrait', "Tablet");
                   }
-                  else if (self.classList.contains('tablet-landscape')) {
-                    setPosition(sizes.tabletLandscape, false, 'tabletLandscape', "Tablet Landscape");
-                  }
+                  // else if (self.classList.contains('tablet-landscape')) {
+                  //   setPosition(sizes.tabletLandscape, false, 'tabletLandscape', "Tablet Landscape");
+                  // }
                   else if (self.classList.contains('auto')) {
                     setPosition(sizes.auto, false, 'auto', "Desktop");
                   }
                 }, 10);
               });
             });
-            // keyboard.addEventListener('click', function (e) {
-            //   e.preventDefault();
-            //   e.stopPropagation();
-            //   keyboard.classList.toggle('active');
-            //   wrapper.classList.toggle('keyboard')
-            // }, false);
+
             w.addEventListener('resize', function () {
               resize();
             }, false);
+
             w.addEventListener('keyup', function (e) {
               var key = e.keyCode ? e.keyCode : e.charCode,
                   keys = {
@@ -158,11 +156,17 @@ $(function(){
               if (typeof (keys[key]) === 'undefined') { return false; }
               setPosition(sizes[keys[key]], false, keys[key], "auto");
             }, false);
+
             resize();
+
             size.style.minWidth = 0;
-            if (isNav == true) {
-              $(".tablet-portrait")[0].click();
-            }
+
+            // Enable animations now that the page has loaded
+            document.getElementById('wrapper').classList.add('enableTransitions');
+
+            // if (isNav == true) {
+            //   $(".tablet-portrait")[0].click();
+            // }
 
         });
     })(window.resbook);

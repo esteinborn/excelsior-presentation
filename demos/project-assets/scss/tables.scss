@@ -1,0 +1,32 @@
+@charset "UTF-8";
+// @import "compass";
+// @import "toolkit";
+// @import "_variables.scss";
+// @import "_mixins.scss";
+
+
+html, body {height:auto;}
+body{max-width:90%;margin:1em auto;}
+.row { max-width:100%;}
+.row.display {font-size: 1em; margin-bottom: 10px; padding:0; }
+.row.display .columns, .row.display .column { background: #e7e7e7; border: 2px solid #c9c9c9; font-weight: bold; text-indent: 3px; padding: 10px 5px; color: #444; }
+
+table {
+    border: 1px solid #777; // #ddd;
+}
+
+th,
+td {
+    border-top: 1px solid #777; // #ddd
+    border-left: 1px solid #777; // #ddd
+
+    &:first-child {
+        border-left: none;
+    }
+}
+
+table tr.even,
+table tr.alt,
+table tr:nth-of-type(even) {
+    background: #ddd; //#f9f9f9;
+}

@@ -70,3 +70,19 @@ function zoomFuzzy() {
   flag.fuzzyDiv.style.left = flag.finalPos[0] + 'px';
   flag.fuzzyDiv.style.top = flag.finalPos[1] + 'px';
 }
+
+/*
+Flag image outline proportions:
+
+962x481 total size
+
+hole: 301x91
+hole begin: 327, 362
+hole end: 628
+right space: 334x
+
+top = 362/481 = 0.7525987526 of height
+left = 327/962 = 0.3399168399 of width
+width = 301/962 = 0.3128898129 of width
+height = 91/481 = 0.1891891892 of height
+*/

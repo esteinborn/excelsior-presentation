@@ -43,13 +43,13 @@ document.body.addEventListener('keydown', function(evt) {
       flag.fuzzy.style.transition = 'none';
       flag.fuzzyDiv.style.WebkitTransition = 'none';
       flag.fuzzyDiv.style.transition = 'none';
-      flag.fuzzy.style.width = (flag.small.clientWidth * 0.3129 * 1.05) + 'px'; //(flag.finalSize[0] * .05) + 'px';
-      flag.fuzzy.style.height = (flag.small.clientHeight * 0.1892) + 'px'; //(flag.finalSize[1] * .05) + 'px';
-      flag.fuzzyDiv.style.left = (flag.smallPos[0] + flag.small.clientWidth * 0.3399) + 'px'; //flag.smallPos[0] + flag.small.clientWidth/2 - ((flag.finalSize[0] * .05)/2) + 'px';
-      flag.fuzzyDiv.style.top = (flag.smallPos[1] + flag.small.clientHeight * 0.7526 * 0.92) + 'px'; //flag.smallPos[1] + flag.small.clientHeight/2 + (flag.finalSize[1] * .05) + 10 + 'px';
+      flag.fuzzy.style.width = (flag.small.clientWidth * 0.3129 * 0.95) + 'px';
+      flag.fuzzy.style.height = (flag.small.clientHeight * 0.1892) + 'px';
+      flag.fuzzyDiv.style.left = (flag.smallPos[0] + flag.small.clientWidth * 0.3399 + (flag.small.clientWidth * 0.3129 * 0.02)) + 'px';
+      flag.fuzzyDiv.style.top = (flag.smallPos[1] + flag.small.clientHeight * 0.7526 * 0.87) + 'px';
       flag.fuzzyDiv.classList.add('visible');
 
-      // Needed so the initial positioning can take effect first
+      // Need timeout so the initial positioning can take effect first
       setTimeout(zoomFuzzy, 10);
     }
   }

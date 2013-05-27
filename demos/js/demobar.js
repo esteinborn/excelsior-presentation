@@ -156,9 +156,7 @@ $(function(){
               if (typeof (keys[key]) === 'undefined') { return false; }
               setPosition(sizes[keys[key]], false, keys[key], "auto");
             }, false);
-
             resize();
-
             size.style.minWidth = 0;
 
             // Enable animations now that the page has loaded

@@ -19,8 +19,7 @@
   outline:none;
 }
 
-#wrapper
-{
+#wrapper {
   box-shadow:0 0 12px 1px #000;
   -webkit-transform:translate3d(0,0,0);
   position:relative;

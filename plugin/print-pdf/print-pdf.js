@@ -12,7 +12,7 @@ var page = new WebPage();
 var system = require( 'system' );
 
 page.paperSize = {
-	format: 'A4',
+	format: 'Letter',
 	orientation: 'landscape',
 	margin: {
 		left: '0',

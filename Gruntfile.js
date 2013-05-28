@@ -53,6 +53,27 @@ module.exports = function(grunt) {
 			}
 		},
 
+		compass: {
+      options: {
+          require: [
+              'breakpoint',
+              'toolkit'
+          ],
+          cssDir: 'css',
+          sassDir: 'scss',
+          imagesDir: 'images',
+          javascriptsDir: 'js',
+          outputStyle: 'nested',
+          relativeAssets: true,
+          force: true
+      },
+      project: {
+          options: {
+              basePath: 'demos/project-assets/'
+          }
+      }
+    },
+
 		jshint: {
 			options: {
 				curly: false,
@@ -103,6 +124,10 @@ module.exports = function(grunt) {
 			theme: {
 				files: [ 'css/theme/source/*.scss', 'css/theme/template/*.scss' ],
 				tasks: 'themes'
+			},
+			craig: {
+				files: [ 'demos/project-assets/scss/*.scss' ],
+				tasks: 'compass'
 			}
 		}
 
@@ -114,6 +139,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
+	grunt.loadNpmTasks( 'grunt-contrib-compass' );
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-zip' );
 

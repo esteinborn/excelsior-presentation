@@ -1,0 +1,20 @@
+#notes i {
+  font-style: italic;
+  font-family: Consolas, monospace;
+  font-size: 0.9em;
+  color: #666;
+}
+
+#notes .mine {
+  color: blue;
+}
+
+#wrap-current-slide {
+  /*width: 640px;*/
+  height: 440px;
+}
+
+#current-slide {
+  /*width: 1280px;*/
+  height: 880px;
+}

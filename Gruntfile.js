@@ -48,31 +48,11 @@ module.exports = function(grunt) {
 					'css/theme/simple.css': 'css/theme/source/simple.scss',
 					'css/theme/sky.css': 'css/theme/source/sky.scss',
 					'css/theme/moon.css': 'css/theme/source/moon.scss',
-					'css/theme/solarized.css': 'css/theme/source/solarized.scss'
+					'css/theme/solarized.css': 'css/theme/source/solarized.scss',
+					'css/print/speaker.css': 'css/theme/source/print-speaker.scss'
 				}
 			}
 		},
-
-		compass: {
-      options: {
-          require: [
-              'breakpoint',
-              'toolkit'
-          ],
-          cssDir: 'css',
-          sassDir: 'scss',
-          imagesDir: 'images',
-          javascriptsDir: 'js',
-          outputStyle: 'nested',
-          relativeAssets: true,
-          force: true
-      },
-      project: {
-          options: {
-              basePath: 'demos/project-assets/'
-          }
-      }
-    },
 
 		jshint: {
 			options: {
@@ -124,10 +104,6 @@ module.exports = function(grunt) {
 			theme: {
 				files: [ 'css/theme/source/*.scss', 'css/theme/template/*.scss' ],
 				tasks: 'themes'
-			},
-			craig: {
-				files: [ 'demos/project-assets/scss/*.scss' ],
-				tasks: 'compass'
 			}
 		}
 
@@ -139,7 +115,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
-	grunt.loadNpmTasks( 'grunt-contrib-compass' );
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-zip' );
 

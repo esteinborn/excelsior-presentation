@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import "compass";
+@import "toolkit";
+@import "_variables.scss";
+@import "_mixins.scss";
+
+* {
+    -webkit-transition: all .5s linear;
+            transition: all .5s linear;
+}
+
+html,
+body {
+    height: auto;
+}
+
+body {
+    max-width:90%;margin:1em auto;
+}
+
+.row {
+    max-width:100%;
+}
+
+.row.display {
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+    .columns {
+        background: #e7e7e7;
+        border: 2px solid #c9c9c9;
+        font-weight: bold;
+        text-indent: 3px;
+        padding: 10px 5px;
+        color: #444;
+    }
+
+    .row.display {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+h4 {
+    margin-top: 2em;
+}
+
+
+.blue.display.row .columns {
+    @include grid-bg-colors($linkColor);
+}
+
+.green.display.row {
+    box-shadow: none;
+
+    > .large-4.columns {
+        min-height: 5.6em;
+    }
+
+    .columns {
+        @include grid-bg-colors($green);
+    }
+}
+
+.yellow.display.row .columns {
+    @include grid-bg-colors($yellow);
+    color: black;
+}
+
+.red.display.row .columns {
+    @include grid-bg-colors($red);
+}
+
+// .purple.display.row .columns {
+//     @include grid-bg-colors($purple);
+// }
+
+@media only screen and (max-width: 767px) {
+    .red.display.row .columns {
+        &:first-child,
+        &:nth-child(2) {
+            border-bottom: none;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            border-left: $grid-border;;
+        }
+    }
+
+    .green.display.row .yellow.display.row .columns {
+        &:first-child {
+            border-right: none;
+            border-bottom: none;
+        }
+
+        &:nth-child(2) {
+            border-top: $grid-border;
+            border-bottom: none;
+        }
+
+        &:nth-child(3) {
+            border-left: $grid-border;
+        }
+    }
+
+    .green.display.row {
+        > .large-4.columns {
+            min-height: auto;
+        }
+
+        .columns {
+            &:nth-child(2) {
+                border-top: none;
+                border-left: $grid-border;
+            }
+        }
+    }
+}

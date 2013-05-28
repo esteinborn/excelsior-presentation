@@ -164,3 +164,50 @@ strike {
 .reveal blockquote {
   background: rgba(255, 255, 255, 0.65);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.55); }
+
+img.full-width {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.collage {
+  position: relative; }
+
+.collage > div {
+  float: left;
+  height: 10em;
+  line-height: 10em; }
+
+.collage img {
+  vertical-align: middle; }
+
+.collage small {
+  position: relative;
+  font-size: 50%; }
+
+.collage .img-flag {
+  position: relative;
+  width: 33%; }
+
+.collage .img-statue {
+  width: 35%; }
+
+.collage .img-capitol {
+  width: 32%; }
+
+.collage .img-capitol small {
+  top: -3.2em; }
+
+.img-flag-outline {
+  position: absolute;
+  top: 0em;
+  left: 0em; }
+
+.img-flag-outline img {
+  position: relative; }
+
+.img-flag-fuzzy,
+.img-flag-clear {
+  position: absolute;
+  top: 20%;
+  left: 2%; }

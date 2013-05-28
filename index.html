@@ -39,7 +39,7 @@
       <!-- ******** *************************** ******* -->
 
       <section>
-          <h2>ITS Helped Us Collaborate</h2>
+          <h2>ITS Collaboration</h2>
           <div><img src="img/ITSonly.png" class="noshadow"></div>
           <aside class="notes">
               <p>My name is Craig Patik, and I'm from the Department of Tax and Finance.</p>
@@ -164,10 +164,11 @@
           <!-- <p>Don't reinvent the wheel again</p> -->
           <aside class="notes">
           	  <p>Responsive design can be hard. <i>bullet</i></p>
-              <p>It takes a lot of time &mdash; new techniques and best practices are constantly coming to the forefront. <i>bullet</i></p>
-              <p>It's a moving target &mdash; you have to stay on top of the latest developments &mdash; just as users are staying on top of the latest shiny new phone or tablet. <i>bullet</i></p>
+              <p>It takes a lot of time to keep up with all the new techniques and best practices constantly coming to the forefront. <i>bullet</i></p>
+              <p>It's a moving target &mdash; you have to stay on top of the latest developments, just as users are staying on top of the latest shiny new phone or tablet. <i>bullet</i></p>
               <p>And it's just plain different than what we're used to.</p>
-              <p>All of this can be overwhelming, so we looked around to see if anyone else had already attempted this problem. <i>next</i></p>
+              <p>All of this can be overwhelming, so we looked around to see if anyone else had already attempted this problem.</p>
+              <p><i>next</i></p>
           </aside>
       </section>
 
@@ -177,8 +178,7 @@
               <img src="img/anybodyoutthere.jpg" style="height:500px">
           </div>
           <aside class="notes">
-              <p>Fortunately, we found a few organizations tackling responsive web design well.</p>
-              <p>We picked the one that fit best.</p>
+              <p>Fortunately, we found a few organizations doing a good job tackling responsive web design, and we chose the one that fit best.</p>
               <p><i>next</i></p>
           </aside>
       </section>
@@ -241,8 +241,9 @@
           <aside class="notes">
               <p>Next up: grids.</p>
               <p>Grids let us define a layout for our components. That layout can be adjusted to fit different conditions.</p>
+              <p>Every site can be designed around a grid.</p>
               <p><i>show image</i></p>
-              <p>Every site can be designed around a grid. Even a relatively cluttered, mish-mash of a site like an Amazon product page has some structure behind it. <i>next</i></p>
+              <p>Even a relatively cluttered, mish-mash of a site, like an Amazon product page, has some structure behind it. <i>next</i></p>
           </aside>
       </section>
 
@@ -252,7 +253,9 @@
           	<img src="img/amazon-grid.png">
           </div>
           <aside class="notes">
-              <p>A <em>responsive</em> grid takes it a step further &mdash; you can stack and reflow components in different configurations depending on how much room you have.</p>
+              <p>A <em>responsive</em> grid takes it a step further.</p>
+              <p>Each one of those red boxes up there can be thought of as a single component.</p>
+              <p>Components can be laid out and reflowed in different configurations depending on the context and the screen size.</p>
           </aside>
       </section>
 
@@ -263,29 +266,24 @@
           </div>
           <!-- <div class="fragment" data-fragment-index="0"><img src="img/grid.gif" alt=""></div> -->
           <aside class="notes">
-          		<p>Let's take a look at an example. <i>launch demo</i></p>
-              <p>Here we've got two examples: at the top are three sections of the page &mdash; they could contain anything: text, photos, or even a complex widget &mdash; and those are always going to remain side-by-side.</p>
-              <p>But down here, in red, these pieces can't get much narrower and still be usable, so they're going re-stack. Just watch.</p>
+          		<p>Let's take a look at an example of how a grid can reflow. <i>launch demo</i></p>
+              <p>Now, for this demo I'm just using the basic outline of a grid. These boxes could contain any kind of content &mdash; text, images, buttons, and so on.</p>
+              <p>These are two examples that take different approaches to responsiveness.</p>
+              <p>At the top are three sections laid side-by-side and split into equal thirds.</p>
+              <p>Down here, in red, we have a similar side-by-side layout. But lets assume that the content in these red areas can't get much narrower and still be usable.</p>
+              <p>Let's see how these two arrangements react when we go down to the size of a tablet.</p>
               <p><i>click tablet</i></p>
-              <p>Did you see that? Your eye was probably drawn to the red area where the pieces are now stacked vertically so make sure each has enough width.</p>
-              <p>But up here in the blue area, it's no longer split into thirds. <i>mouse around right side</i> Because this piece out here needs more width, it's now taking up half of the screen, and over here on the left it's been shrunk down to just a sixth.</p>
-              <p>Let's take it a step further. <i>click button</i> Again, remember that these boxes could contain anything, the colors are just for demonstration.</p>
-              <p>Now we have two separate structures nested together &mdash; the green pieces are stacked, and the yellow pieces are split up in their own way.</p>
+              <p>Your eye was probably drawn to the red area where the pieces are now stacked vertically. This ensures each one has enough width for its content.</p>
+              <p>But up here, the blue layout is no longer split into thirds. <i>mouse around right side</i> Because the content in this piece needs more width, it has actually expanded to take up half of the screen. Over on the left the pieces have been shrunk down to compensate.</p>
+              <p>Let's take grids a step further.</p>
+              <p><i>click 'Advanced' button</i></p>
+              <p>Now we have two separate structures nested together. At this size, most of the pieces are stacked on top of each other and they're pretty symmetrical.</p>
               <p>Let's go back to a wider screen. <i>click desktop</i></p>
-              <p>Now everything is side-by-side, and the yellow pieces are using different proportions then before. This is all the same HTML and some very basic CSS. It's not the code that's complex, it's the approach to your page's structure that takes some thought. You really have to take a moment to look at your content on different-sized screens to get a feel for what works best.</p>
+              <p>Now everything is side-by-side, all in one row. The pieces are using different proportions then before &mdash; they're no longer symmetrical. This is all the same HTML and the same content, it's just laid out differently to maintain legibility.</p>
+              <p>The code behind this is not complex. It's the approach to your page's structure that requires some thought. You really have to take a moment to look at your content on different-sized screens to get a feel for what works best.</p>
               <p>Let's move on to the last demo. <i>next</i></p>
           </aside>
       </section>
-
-      <!-- <section>
-          <h2>Tabs to Accordion</h2>
-          <div>
-              <a href="demos/tabtoaccordion.html" target="_blank">View Demo</a>
-          </div>
-          <div class="fragment" data-fragment-index="0"><img src="img/tabtoaccordion.gif" alt=""></div>
-          <aside class="notes">
-          </aside>
-      </section> -->
 
       <section data-transition="fade">
           <h2>Responsive Tables</h2>
@@ -375,33 +373,6 @@
               </ul>
           </aside>
       </section>
-
-      <!--
-      <section data-transition="fade">
-          <h2>Pixel-Perfect Photoshop Comps</h2>
-          <div><img src="img/old-mockup.jpg" alt=""></div>
-          <aside class="notes">
-              <ul>
-                  <li>Typically you would design in Photoshop, and mock up all kinds of layouts.</li>
-                  <li>Everything was perfect, right down to the pixel.</li>
-                  <li>"Your web designer is great, they can make it look exactly the same, right?"</li>
-              </ul>
-          </aside>
-      </section>
-      <section data-transition="fade">
-          <h2>
-              <strike>Pixel-Perfect Photoshop Comps</strike>
-          </h2>
-          <div><img src="img/multi-device.jpg" alt=""></div>
-          <aside class="notes">
-              <ul>
-                  <li>If you want to comp every design, you'd have to design separate comps for every single device</li>
-                  <li>Responsive design isn't pixel-perfect</li>
-                  <li>Responsive design is <em>device</em>-perfect. It's <em>environment</em>-perfect</li>
-              </ul>
-          </aside>
-      </section>
-      -->
 
 			<!-- ******** **************************** ******* -->
 			<!-- ******** Slide 31 - Eric Begins here  ******* -->

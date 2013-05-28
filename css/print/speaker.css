@@ -4,7 +4,7 @@
     -webkit-print-color-adjust: exact; }
 
   body {
-    font-size: 18pt;
+    font-size: 14pt;
     width: auto;
     height: auto;
     border: 0;
@@ -35,13 +35,16 @@
   /* SECTION 3: Set body font face, size, and color.
      Consider using a serif font for readability. */
   body, p, td, li, div {
-    font-size: 18pt; }
+    font-size: 14pt; }
 
   /* SECTION 4: Set heading font face, sizes, and color.
      Diffrentiate your headings from your body text.
      Perhaps use a large sans-serif for distinction. */
   h1, h2, h3, h4, h5, h6 {
     text-shadow: 0 0 0 #000 !important; }
+
+  h2 {
+    font-size: 20pt !important; }
 
   /* SECTION 5: Make hyperlinks more usable.
      Ensure links are underlined, and consider appending
@@ -149,4 +152,6 @@
     border: 1px dotted #444;
     padding: 0.5em;
     text-align: left;
-    font-size: 0.8em; } }
+    font-size: 0.6em; }
+    .reveal aside.notes i {
+      color: #777; } }

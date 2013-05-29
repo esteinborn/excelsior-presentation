@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="css/reveal.min.css">
 	<link rel="stylesheet" href="css/theme/beige.css" id="theme">
 	<!-- For syntax highlighting -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
 	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 	<script>
 	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
@@ -444,7 +443,7 @@
 				<h2>Some Key Features</h2>
 				<div class="fragment">An easy entry point for beginners</div>
 				<div class="fragment">Flexible enough for advanced developers</div>
-				<div class="fragment">Reusable and re-skinnable components and patterns</div>
+				<div class="fragment">Reusable, re-skinnable, accessible components and patterns</div>
 				<div class="fragment">Ongoing state-wide collaboration effort to implement RWD</div>
 				<aside class="notes">
 					<i>&raquo; </i> First, It's super easy to use, and we'll talk about that a bit later<br>
@@ -473,9 +472,9 @@
 				<div class="fragment">In-depth wiki</div>
 				<aside class="notes">
 					And Using Excelsior is as easy as using HTML and CSS<br>
-					<i>&raquo; </i> You can implement every component just by reading the in-depth Documentation for every component<br>
-					<i>&raquo; </i>and the wiki gets detailed on how to go about making Excelsior your own<br>
-					Then you can decide if Excelsior fits your needs. <i>Next &raquo; </i> 
+					<i>&raquo; </i> The in-depth Documentation explains how you can implement every component<br>
+					<i>&raquo; </i> and the wiki gives you more detail on how to go about making Excelsior your own<br>
+					After going over these resources you can decide if Excelsior fits your needs. <i>Next &raquo; </i> 
 				</aside>
 			</section>
 			<section>
@@ -497,12 +496,15 @@
 				<p class="fragment">Emails and spreadsheets for bugs and changes</p>
 				<p class="fragment red-x-37">&times;</p>
 				<aside class="notes">
-					Stop me if you've NEVER heard of any of these common techniques and processes.<br>
+					Stop me if you've NEVER heard of any of these common problems.<br>
 					<i>&raquo; </i> Just put it on the website, I don't care how it looks<br>
-					<i>&raquo; </i> Designing only for the desktop, treating mobile as an after-thought, and often a separate site entirely<br>
-					<i>&raquo; </i> That leads to double the amount of manually maintained stylesheets and JavaScript files<br>
-					<i>&raquo; </i> That are all loaded individually on every page
-					<i>&raquo; </i> We hated those outdated ideas, So...
+					<i>&raquo; </i> BUUUUT, it must look perfect at 1024 resolution, and that banner better be above the "fold"<br>
+          <i>&raquo; </i> I don't care about mobile, just make a separate mobile site<br>
+					<i>&raquo; </i> Well, you already had too many manually maintained stylesheets and javascript files loaded on that page, which have been effectively doubled since you need to maintain a separate mobile site.<br>
+					<i>&raquo; </i> and while you were working on those manually maintained files,Your mismanaged check-in check-out source control system decided to not allow you to commit your changes to the server, and wont tell you why.<br>
+          <i>&raquo; </i> which means you cant explain to your boss what the problem was in that super accurate and up-to-date spreadsheet or email chain that you use to keep track of your changes.<br>
+					<i>&raquo; </i> I'll wager that every single person in this room has experienced one of these list items.<br>
+          And we all know that they don't work, so <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section>
@@ -510,7 +512,7 @@
 				<img src="img/balrog2.gif" style="height: 510px;">
 				<aside class="notes">
 					We Treated them like the Evil Beasts that they are...<br>
-					We stood our ground and we told them:
+					We stood our ground and we told them: <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section>
@@ -518,38 +520,37 @@
 				<img src="img/shall-not-pass.gif" style="height: 405px;">
 				<aside class="notes">
 					YOU SHALL NOT PASS!<br>
-					They were replaced with:
+					Those outdated techniques were replaced by: <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section>
 				<h2>Hello, Modern Techniques and Processes</h2>
-				<h3 class="fragment">Content Based Design</h3>
-				<h3 class="fragment">Multi-Device &amp; Mobile-First</h3>
-				<h3 class="fragment">Preprocessed CSS and Build tasks</h3>
-				<h3 class="fragment">Minified and Combined Assets</h3>
-				<h3 class="fragment">GitHub</h3>
-				<h3 class="fragment">GitHub Issues</h3>
-				<div class="fragment"><br>...and we made it easy to use too!</div>
+				<p class="fragment">Content Based Design</p>
+				<p class="fragment">Multi-Device &amp; Mobile-First</p>
+				<p class="fragment">Preprocessed CSS and Build tasks</p>
+				<p class="fragment">Minified and Combined Assets</p>
+				<p class="fragment">GitHub</p>
+				<p class="fragment">GitHub Issues</p>
+				<div class="fragment"><br>...and it's easy to use!</div>
 				<aside class="notes">
-					A modern web development processes including but not limited to:<br>
+					A modern web development process including but not limited to:<br>
 					<i>&raquo; </i> content based design,  <i>&raquo; </i> that works on multiple devices because it's mobile first<br>
-					<i>&raquo; </i> Our CSS and Javscript files are pre-processed,  <i>&raquo; </i> they are then compressed and combined into a single JS and CSS file<br>
+          <i>&raquo; </i> Your CSS and Javscript files are pre-processed,  <i>&raquo; </i> they are then compressed and combined into a single JavaScript and CSS file<br>
 					<i>&raquo; </i> Excelsior is hosted on GitHub <i>&raquo; </i> and uses GitHub Issues for bug tracking and feature requests.<br>
-					 <i>&raquo; </i> All of this, and it's easy to use too!
+					 <i>&raquo; </i> All of this, and it's still easy to use! <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section>
-				<h2>Next-Gen Browsers and Devices</h2>
+				<h2>What About Browser Support?</h2>
 				<div>Fully functional in all latest major browsers</div>
 				<div>Chrome, Firefox, Opera, Safari</div>
-				<div>iPhone, Android 2+, WinPhone 7+</div>
+				<div>iPhone, Android, and Windows Phones</div>
 				<div class="fragment">Internet Explorer 8 and Higher</div>
 				<aside class="notes">
 					Let's talk about browser support for a minute or two<br>
 					Excelsior is fully functional in all major browsers<br>
 					What about IE support?<br>
-					Excelsior is still fully functional in IE 8 and higher<br>
-					BUT...
+					<i>&raquo; </i>Excelsior is still fully functional in IE 8 and higher, BUT <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section>
@@ -557,8 +558,8 @@
 				<p>Serve IE6 &amp; IE7 your mobile or print styles</p>
 				<aside class="notes">
 					Non-major browsers will still "work"<br>
-					You choose whether to serve IE6 and 7 your mobile stylesheet or your print stylesheet.<br>
-					Now, I know I've probably lost some of you here...
+					The word work is in quotes here because you choose whether to serve your mobile stylesheet or your print stylesheet to non major browsers, like IE6 and 7 .<br>
+					Now, I know I've probably lost some of you here... <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section>
@@ -570,8 +571,8 @@
 					And Some of you are probably thinking<br>
 					Nope, nope nope, Excelsior isn't for me then,<br>
 					I'll ask you why and you'll say<br>
-					My sites must look identical across all browsers and fully support IE6 and IE7!<br>
-					I've got three things to say about that.
+					<i>&raquo; </i>My sites must look identical across all browsers and fully support IE6 and IE7!<br>
+          <i>&raquo; </i>I've got three things to say about that. <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section>
@@ -582,9 +583,10 @@
 				<aside class="notes">
 					First, Really?!<br>
 					I have it on good authority that the vast majority of IE usage is based around downloading a better browser.<br>
-					But seriously, do you REALLY need to support them?<br>
-					Double check your analytics: IE6-7 usage is down dramatically over the last few years.<br>
-					Let me show you my two favorite graphs.
+					But all joking aside, do you REALLY need to support them?<br>
+					I would urge you to take another look at your analytics:<br>
+          You'll probably notice that IE6-7 usage is down dramatically over the last few years.<br>
+					Let me show you my two favorite graphs. <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section data-transition="fade">
@@ -594,7 +596,10 @@
 				<small>Source: <a href="http://gs.statcounter.com/#browser-na-monthly-200904-201304">StatCounter</a></small>
 				<aside class="notes">
 					This is a graph showing you IE 6 usage in North America from 2009 to last month<br>
-					IE6 usage for all intents and purposes is zero
+          I've declared in the title that IE 6 is dead<br>
+					I believe this graph clearly supports that statement<br>
+          IE6 usage is, for all intents and purposes, zero.<br>
+          and believe it or not...  <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section data-transition="fade">
@@ -605,21 +610,31 @@
 				<p>IE 7 = 0.74%</p>
 				<small>Source: <a href="http://gs.statcounter.com/#browser-na-monthly-200904-201304">StatCounter</a></small>
 				<aside class="notes">
-					IE7 is closely approaching that.<br>
-					Some people may say this is higher,<br>
-					But in reality your numbers are probably being skewed by your agency browsers.
+					IE7 isn't far behind.<br>
+					You may be thinking that your stats are probably higher than this<br>
+					But it may very well be that your internal agency stats are skewing this number making it seem higher than it really is.<br>
+          So, IE6 and 7 are essentially dead <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section>
-				<h2>2. Shun the Future for the past?</h2>
-				<div>
-					<img src="img/old-pc.gif" style="height: 504px;">
+				<h2>2. Don't Shun the Future for the past</h2>
+        <div class="fragment">
+          <blockquote>"Never put off tomorrow<br>what you can do today"</blockquote>
+          <cite><small>- Thomas Jefferson</small></cite>
+        </div>
+				<div class="fragment">
+					<img src="img/wood-mac.png" class="noshadow">
 				</div>
 				<aside class="notes">
 					My second point is,<br>
-					Don't put off today's technology becuase of yesterdays troubled browsers.<br>
+					Well, someone else put it best when he said:<br>
+          <i>&raquo; </i>"Never put off tomorrow what you can do today<br>
+          Does anyone know who said that? Yes, Thomas Jefferson.<br>
+          Don't limit yourself to the confines of old, dead legacy web browsers<br>
+          Embrace the changes in Responsive Web Design<br>
 					We're not programming for Beige CRT monitors on 5 1/4 floppies.<br>
-					And if you take another look at your analytics...
+          <i>&raquo; </i>Or on the iWood Thomas Jefferson used back in the day.<br>
+					And if you take another look at your analytics... <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section data-transition="fade">
@@ -630,8 +645,9 @@
 				<p>IE Usage 2009-2013</p>
 				<small>Source: <a href="http://gs.statcounter.com/#browser-na-monthly-200904-201304">StatCounter</a></small>
 				<aside class="notes">
-					You'll notice that Overall IE usage has dropped drastically over the last 4 years<br>
-					We need to stop focusing so much on declining legacy browsers...
+					You'll find no traces of the iWood anywhere<br>
+          You'll notice that Combined overall IE usage has dropped drastically over the last 4 years<br>
+					We need to stop focusing so much on declining legacy browsers... <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section data-transition="fade">
@@ -674,6 +690,7 @@
 				<aside class="notes">
 					And lets be honest, there may have even been some crying<br>
 					But for whatever reason, your site must still support legacy browsers<br>
+          Heres the payoff I mentioned earlier folks <i>Next &raquo; </i>
 				</aside>
 			</section>
 			<section>
@@ -712,6 +729,21 @@
 					But there are so many benefits of GitHub, and I'm going to tell you about two.
 				</aside>
 			</section>
+      <section>
+        <h2>Have Something to Add?</h2>
+        <div class="fragment">Add support for legacy browsers?</div>
+        <div class="fragment">Add a cool new feature that works great?</div>
+        <div class="fragment">Contribute back, share your work with the world!</div>
+        <aside class="notes">
+          The thing that excites me the most about GitHub is the collaboration it allows<br>
+          Excelsior is yours just as much as it is ours.<br>
+          We urge you to add new exciting features and contribute back to the project.<br>
+          Did you build support for legacy browsers, or add a cool new feature?<br>
+          You will never be shut out, the door is always open, all ideas and opinions can be discussed<br>
+          If you contribute back, you will receive a pre-determined amount of high-fives and patted-backs based on its level of awesomeness.<br>
+          If you add legacy browser support and it doesn't completely kill page performance, You will receive a hug :)
+        </aside>
+      </section>
 			<section>
 				<h2>Houston We Have a Problem.</h2>
 				<div class="fragment">
@@ -730,26 +762,10 @@
 				</aside>
 			</section>
 			<section>
-				<h2>Have Something to Add?</h2>
-				<div class="fragment">Add support for legacy browsers?</div>
-				<div class="fragment">Add a cool new feature that works great?</div>
-				<div class="fragment">Contribute back, share your work with the world!<br><br>
-				<img src="img/hacktheplanet.gif" alt=""></div>
-				<aside class="notes">
-					The thing that excites me the most about GitHub is the collaboration it allows<br>
-					Excelsior is yours just as much as it is ours.<br>
-					We urge you to add new exciting features and contribute back to the project.<br>
-					Did you build support for legacy browsers, or add a cool new feature?<br>
-					You will never be shut out, the door is always open, all ideas and opinions can be discussed<br>
-					If you contribute back, you will receive a pre-determined amount of high-fives and patted-backs based on its level of awesomeness.<br>
-					If you add legacy browser support and it doesn't completely kill page performance, You will receive a hug :)
-				</aside>
-			</section>
-			<section>
 				<h2>Where Can I See Some RWD Action?</h2>
 				<div class="fragment"><img class="noshadow" src="img/go-responsive.logo.png" style=""><br>
 				<img class="noshadow" src="img/whats-responsive_sm.png" style="">
-					<p><small><a href="http://nys-its.github.io/go-responsive">nys-its.github.io/go-responsive</a></small></p></div>
+					<p><small><a href="http://nys-its.github.io/go-responsive" target="_blank">nys-its.github.io/go-responsive</a></small></p></div>
 				<aside class="notes">
 					After all of this, You still need to figure out how to pull off RWD correctly.<br>
 					Well you could Google "RWD" and sift through 21 million results of varying quality and opinions, OR<br>
@@ -769,9 +785,6 @@
 				</aside>
 			</section>
 			<section>
-				<h2>Questions?</h2>
-			</section>
-			<section>
 				<h2>Thanks for Listening</h2>
 					<br>
 					<div>
@@ -788,6 +801,12 @@
 						<small>Division of Criminal Justice Services</small>
 					</div>
 			</section>
+      <section>
+        <h2>Questions?</h2>
+        <aside class="notes">
+          Great Question!
+        </aside>
+      </section>
 		</div>
 	</div>
 	<script src="lib/js/head.min.js"></script>

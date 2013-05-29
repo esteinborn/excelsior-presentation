@@ -105,47 +105,7 @@ module.exports = function(grunt) {
 				files: [ 'css/theme/source/*.scss', 'css/theme/template/*.scss' ],
 				tasks: 'themes'
 			}
-		},
-    reduce: {
-        // Source folder
-        root: '', // Default: 'app',
-
-        // Build destination folder
-        outRoot: 'dist', // Default: 'dist',
-
-        // Root of your CDN. Optional
-        //cdnRoot: 'https://my.amazon.s3.bucket',
-
-        // minimatch patterns of files to include as base assets
-        // Dependencies of these will be automatically populated
-        // Paths are relative to reduce.root ('app')
-        include: [
-          '**/*.jpg',
-          '**/*.png'
-        ],
-
-        // Compile less files and remove less.js from application
-        less: false, // Default: true
-
-        // Run all available jpeg and png optimizations on images
-        // For maximum efficiency install jpegtran, optipng, pngcrush and pngquant
-        optimizeImages: true, // Default: true
-
-        // Create a cache manifest file
-        // If one already exists it will be ammended with static assets
-        manifest: false, // Default: false
-
-        // Set the 'async'-attribute on all script tags
-        asyncScripts: false, // Default: true
-
-        // Pretty print assets. Good for debugging
-        pretty: false, // Default: false
-
-        // Inline CSS backgrounds below this byte threshold as data-uris
-        // There will be an old IE fallback to the original image
-        // 0 disables.
-        inlineSize: 4096 // Default: 4096
-    }
+		}
 
 	});
 
@@ -157,7 +117,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-zip' );
-	grunt.loadNpmTasks( 'grunt-reduce' );
 
 	// Default task
 	grunt.registerTask( 'default', [ 'sass', 'jshint', 'cssmin', 'uglify' ] );

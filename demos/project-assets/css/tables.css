@@ -1,23 +1,18 @@
-/* line 8, ../scss/tables.scss */
 html, body {
   height: auto; }
 
-/* line 9, ../scss/tables.scss */
 body {
   max-width: 90%;
   margin: 1em auto; }
 
-/* line 10, ../scss/tables.scss */
 .row {
   max-width: 100%; }
 
-/* line 11, ../scss/tables.scss */
 .row.display {
   font-size: 1em;
   margin-bottom: 10px;
   padding: 0; }
 
-/* line 12, ../scss/tables.scss */
 .row.display .columns, .row.display .column {
   background: #e7e7e7;
   border: 2px solid #c9c9c9;
@@ -26,24 +21,18 @@ body {
   padding: 10px 5px;
   color: #444; }
 
-/* line 14, ../scss/tables.scss */
 table {
   border: 1px solid #777; }
 
-/* line 19, ../scss/tables.scss */
 th,
 td {
   border-top: 1px solid #777;
   border-left: 1px solid #777; }
-  /* line 23, ../scss/tables.scss */
   th:first-child,
   td:first-child {
     border-left: none; }
 
-/* line 30, ../scss/tables.scss */
 table tr.even,
 table tr.alt,
 table tr:nth-of-type(even) {
   background: #ddd; }
-
-

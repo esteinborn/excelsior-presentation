@@ -10,7 +10,8 @@
     border: 0;
     padding: 0;
     float: none !important;
-    overflow: visible; }
+    overflow: visible;
+    background: white !important; }
 
   html {
     width: 100%;

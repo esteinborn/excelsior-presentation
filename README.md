@@ -1,6 +1,4 @@
-# [Responsive Design Framework](http://esteinborn.github.io/excelsior-presentation/)
-
-Yeah, we're working on the title.
+# [I Want YOU to Go Responsive](http://esteinborn.github.io/excelsior-presentation/)
 
 ### What
 

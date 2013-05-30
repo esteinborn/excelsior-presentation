@@ -49,7 +49,10 @@ module.exports = function(grunt) {
 					'css/theme/sky.css': 'css/theme/source/sky.scss',
 					'css/theme/moon.css': 'css/theme/source/moon.scss',
 					'css/theme/solarized.css': 'css/theme/source/solarized.scss',
-					'css/print/speaker.css': 'css/theme/source/print-speaker.scss'
+					'css/print/speaker.css': 'css/theme/source/print-speaker.scss',
+					'demos/project-assets/css/grid.css': 'demos/project-assets/scss/grid.scss',
+					'demos/project-assets/css/navigation.css': 'demos/project-assets/scss/navigation.scss',
+					'demos/project-assets/css/tables.css': 'demos/project-assets/scss/tables.scss'
 				}
 			}
 		},
